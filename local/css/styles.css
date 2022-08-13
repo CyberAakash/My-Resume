@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+  font-size: 25px;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+}
+
+hr {
+  color: lightgrey;
+}
+
+/*   background-color: #100720; */
+
+head, body {
+  background-color: #131417;
+  margin: 5% 10% 0;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+
+.main {
+  text-align: center;
+  align-items: center;
+}
+
+.start2 {
+  font-size: 3em;
+  position:relative;
+  letter-spacing: 15px;
+  color: #0e3742;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+  line-height: 0.7em;
+  outline: none;
+  margin-bottom: 20px;
+  animation: myname 5s alternate infinite;
+}
+
+@keyframes myname {
+  0%
+  {
+    color: #0e3742;
+    box-shadow: none;
+  }
+  100%
+  {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4,
+    0 0 20px #03bcf4,
+    0 0 40px #03bcf4,
+    0 0 80px #03bcf4,
+    0 0 160px #03bcf4;
+  }
+}
+
+/* My Profession "WHOIAM" Starts */
+
+/* .whoiam {
+  margin: 4% auto;
+  position: absolute;
+  top: 37%;
+  overflow: hidden;
+  font-size: 30px;
+  line-height: 50px;
+  color: #FFCB04;
+}
+
+.whoiam .static-txt {
+  font-weight: 600;
+  overflow: hidden;
+  height: 50px;
+  padding: 0 40px;
+  width: 100%;
+}
+
+.static-txt:before {
+  content: '[';
+  left: 0;
+}
+
+.static-txt:after {
+  content: ']';
+  position: absolute;
+  right: 0;
+}
+
+.static-txt:before , .static-txt:before {
+  position: absolute;
+  top: 0px;
+  color: #007bff;
+  font-size: 50px;
+  animation-name: opacity1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+} */
+
+.whoiam {
+  display: flex;
+  justify-content: center;
+
+}
+
+.whoiam .static-txt {
+  margin-top: 45px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.whoiam .dynamic-txt {
+  margin-top: 35px;
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txt {
+  list-style: none;
+  color: #03bcf4;
+  font-size: 25px;
+  font-weight: 200;
+  top: 0;
+  position: relative;
+  animation: slide 12s steps(4) infinite;
+  display: none;
+}
+
+@keyframes slide {
+  100%
+  {
+    top: -360px;
+  }
+}
+
+.dynamic-txt li {
+  position: relative;
+}
+
+.dynamic-txt li::after {
+  content: "";
+  position: absolute;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: #131417;
+  border-left: 2px solid #03bcf4;
+  animation: typing 3s steps(20) infinite;
+}
+
+@keyframes typing {
+  40%, 60%
+  {
+    left: calc(100% + 30px);
+  }
+  100%
+  {
+    left: 0;
+  }
+}
+
+
+
+/* My Profession "WHOIAM" Ends */
+
+.info img {
+  margin: 5% auto;
+}
+
+
+/* Social Icons */
+.fa-brands {
+  background: white;
+  padding: 5px;
+  margin : 3px 5px 2px;
+}
